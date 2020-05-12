@@ -90,7 +90,7 @@ var map = new ol.Map({
     view: new ol.View({
          maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:2154',
-            extent: [351066.590000, 6894147.829997, 390738.820000, 6948837.099997],
+            extent: [351066.590000, 6894147.829997, 402712.070000, 6950315.309997],
             units: 'm'})
     })
 });
@@ -99,15 +99,15 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_Parcelle_Verger_cotentin_0,
-      colName: 'NOM_DU_VER',
+      layer: lyr_Vergers_Cotentin_AOC_0,
+      colName: 'NOM_VERGER',
       zoom: 10,
       collapsed: true,
       map: map
     });
 
     map.addControl(searchLayer);
-map.getView().fit([354118.874915, 6902438.855561, 400554.855447, 6931150.722311], map.getSize());
+map.getView().fit([344633.066266, 6929547.339425, 392324.176565, 6959035.266426], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -673,6 +673,14 @@ var geolocateOverlay = new ol.layer.Vector({
 geolocation.setTracking(true);
 
 
+var geocoder = new Geocoder('nominatim', {
+  provider: 'osm',
+  lang: 'en-US',
+  placeholder: 'Search for ...',
+  limit: 5,
+  keepOpen: true
+});
+map.addControl(geocoder);
 
 var attribution = document.getElementsByClassName('ol-attribution')[0];
 var attributionList = attribution.getElementsByTagName('ul')[0];

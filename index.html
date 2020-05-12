@@ -11,6 +11,15 @@
         <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
         <link rel="stylesheet" href="./resources/ol3-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        .ol-geocoder.gcd-gl-container {
+            top: 170px!important;
+        }
+        .ol-geocoder .gcd-gl-btn {
+            width: 21px!important;
+            height: 21px!important;
+        }
+        </style>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <style>
         html, body {
@@ -27,6 +36,7 @@
             top: 130px;
         }
         </style>
+    <link href="http://cdn.jsdelivr.net/openlayers.geocoder/latest/ol3-geocoder.min.css" rel="stylesheet">
 <style>
 .tooltip {
   position: relative;
@@ -95,8 +105,9 @@
         <script src="resources/horsey.min.js"></script>
         <script src="resources/ol3-search-layer.min.js"></script>
         <script src="./resources/ol3-layerswitcher.js"></script>
-        <script src="layers/Parcelle_Verger_cotentin_0.js"></script>
-        <script src="styles/Parcelle_Verger_cotentin_0_style.js"></script>
+    <script src="http://cdn.jsdelivr.net/openlayers.geocoder/latest/ol3-geocoder.js"></script>
+        <script src="layers/Vergers_Cotentin_AOC_0.js"></script><script src="layers/Parcelles_Cotentin_AOC_1.js"></script>
+        <script src="styles/Vergers_Cotentin_AOC_0_style.js"></script><script src="styles/Parcelles_Cotentin_AOC_1_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/qgis2web.js"></script>
         <script src="./resources/Autolinker.min.js"></script>
