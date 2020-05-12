@@ -97,17 +97,11 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
+layerSwitcher.hidePanel = function() {};
+layerSwitcher.showPanel();
 
-    var searchLayer = new ol.SearchLayer({
-      layer: lyr_Vergers_Cotentin_AOC_0,
-      colName: 'NOM_VERGER',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
 
-    map.addControl(searchLayer);
-map.getView().fit([344633.066266, 6929547.339425, 392324.176565, 6959035.266426], map.getSize());
+map.getView().fit([341650.450083, 6923090.129133, 389341.560383, 6952578.056134], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

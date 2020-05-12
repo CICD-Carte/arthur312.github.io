@@ -1,4 +1,4 @@
-ol.proj.get("EPSG:2154").setExtent([344633.066266, 6929547.339425, 392324.176565, 6959035.266426]);
+ol.proj.get("EPSG:2154").setExtent([341650.450083, 6923090.129133, 389341.560383, 6952578.056134]);
 var wms_layers = [];
 var baseLayer = new ol.layer.Group({
     'title': '',
@@ -41,9 +41,9 @@ jsonSource_Parcelles_Cotentin_AOC_1.addFeatures(features_Parcelles_Cotentin_AOC_
 
 lyr_Vergers_Cotentin_AOC_0.setVisible(true);lyr_Parcelles_Cotentin_AOC_1.setVisible(true);
 var layersList = [baseLayer,lyr_Vergers_Cotentin_AOC_0,lyr_Parcelles_Cotentin_AOC_1];
-lyr_Vergers_Cotentin_AOC_0.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'RA': 'RA', 'RE': 'RE', 'NOM_VERGER': 'NOM_VERGER', 'ID_VERGER': 'ID_VERGER', 'MO': 'MO', 'AR': 'AR', 'AO': 'AO', 'CP': 'CP', 'SURFACE_HA': 'SURFACE_HA', 'SURF_PLANT': 'SURF_PLANT', 'N_SURFPLAN': 'N_SURFPLAN', });
+lyr_Vergers_Cotentin_AOC_0.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'ID_VERGER': 'ID_VERGER', 'MO': 'MO', 'AR': 'AR', 'AO': 'AO', 'CP': 'CP', 'SURFACE_HA': 'SURFACE_HA', 'SURF_PLANT': 'SURF_PLANT', 'N_SURFPLAN': 'N_SURFPLAN', });
 lyr_Parcelles_Cotentin_AOC_1.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'ID_VERGER': 'ID_VERGER', 'MO': 'MO', 'AR': 'AR', 'AO': 'AO', 'CP': 'CP', 'INSEE': 'INSEE', 'Surafce_Ha': 'Surafce_Ha', });
-lyr_Vergers_Cotentin_AOC_0.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'RA': 'TextEdit', 'RE': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'ID_VERGER': 'TextEdit', 'MO': 'TextEdit', 'AR': 'TextEdit', 'AO': 'TextEdit', 'CP': 'TextEdit', 'SURFACE_HA': 'TextEdit', 'SURF_PLANT': 'TextEdit', 'N_SURFPLAN': 'TextEdit', });
+lyr_Vergers_Cotentin_AOC_0.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'ID_VERGER': 'TextEdit', 'MO': 'TextEdit', 'AR': 'TextEdit', 'AO': 'TextEdit', 'CP': 'TextEdit', 'SURFACE_HA': 'TextEdit', 'SURF_PLANT': 'TextEdit', 'N_SURFPLAN': 'TextEdit', });
 lyr_Parcelles_Cotentin_AOC_1.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'ID_VERGER': 'TextEdit', 'MO': 'TextEdit', 'AR': 'TextEdit', 'AO': 'TextEdit', 'CP': 'TextEdit', 'INSEE': 'TextEdit', 'Surafce_Ha': 'TextEdit', });
 lyr_Vergers_Cotentin_AOC_0.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'RA': 'header label', 'RE': 'header label', 'NOM_VERGER': 'header label', 'ID_VERGER': 'header label', 'MO': 'header label', 'AR': 'header label', 'AO': 'header label', 'CP': 'header label', 'SURFACE_HA': 'header label', 'SURF_PLANT': 'header label', 'N_SURFPLAN': 'header label', });
 lyr_Parcelles_Cotentin_AOC_1.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'NOM_VERGER': 'header label', 'ID_VERGER': 'header label', 'MO': 'header label', 'AR': 'header label', 'AO': 'header label', 'CP': 'header label', 'INSEE': 'header label', 'Surafce_Ha': 'header label', });
