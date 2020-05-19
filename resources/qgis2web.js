@@ -88,21 +88,15 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
-            code: 'EPSG:2154',
-            extent: [351066.590000, 6894147.829997, 402712.070000, 6950315.309997],
-            units: 'm'})
+         maxZoom: 28, minZoom: 1
     })
 });
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
-layerSwitcher.hidePanel = function() {};
-layerSwitcher.showPanel();
-
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_Vergers_Cotentin_AOC_0,
+      layer: lyr_Annee_plantation_1,
       colName: 'NOM_VERGER',
       zoom: 10,
       collapsed: true,
@@ -110,7 +104,7 @@ layerSwitcher.showPanel();
     });
 
     map.addControl(searchLayer);
-map.getView().fit([341650.450083, 6923090.129133, 389341.560383, 6952578.056134], map.getSize());
+map.getView().fit([-196902.453225, 6361119.213838, -188096.220138, 6367339.863260], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
