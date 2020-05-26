@@ -9,96 +9,180 @@ new ol.layer.Tile({
 })
 ]
 });
-var format_Parcelle50_entier_0 = new ol.format.GeoJSON();
-var features_Parcelle50_entier_0 = format_Parcelle50_entier_0.readFeatures(json_Parcelle50_entier_0, 
+var format_PourcentageAutres_0 = new ol.format.GeoJSON();
+var features_PourcentageAutres_0 = format_PourcentageAutres_0.readFeatures(json_PourcentageAutres_0, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Parcelle50_entier_0 = new ol.source.Vector({
+var jsonSource_PourcentageAutres_0 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_Parcelle50_entier_0.addFeatures(features_Parcelle50_entier_0);var lyr_Parcelle50_entier_0 = new ol.layer.Vector({
+jsonSource_PourcentageAutres_0.addFeatures(features_PourcentageAutres_0);var lyr_PourcentageAutres_0 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_Parcelle50_entier_0, 
-                style: style_Parcelle50_entier_0,
-                title: '<img src="styles/legend/Parcelle50_entier_0.png" /> Parcelle50_entier'
-            });var format_Annee_plantation_1 = new ol.format.GeoJSON();
-var features_Annee_plantation_1 = format_Annee_plantation_1.readFeatures(json_Annee_plantation_1, 
+                source:jsonSource_PourcentageAutres_0, 
+                style: style_PourcentageAutres_0,
+    title: 'Pourcentage Autres<br />\
+    <img src="styles/legend/PourcentageAutres_0_0.png" />  0 - 21 <br />\
+    <img src="styles/legend/PourcentageAutres_0_1.png" />  21 - 42 <br />\
+    <img src="styles/legend/PourcentageAutres_0_2.png" />  42 - 63 <br />'
+        });var format_PourcentagedAcide_1 = new ol.format.GeoJSON();
+var features_PourcentagedAcide_1 = format_PourcentagedAcide_1.readFeatures(json_PourcentagedAcide_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Annee_plantation_1 = new ol.source.Vector({
+var jsonSource_PourcentagedAcide_1 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_Annee_plantation_1.addFeatures(features_Annee_plantation_1);var lyr_Annee_plantation_1 = new ol.layer.Vector({
+jsonSource_PourcentagedAcide_1.addFeatures(features_PourcentagedAcide_1);var lyr_PourcentagedAcide_1 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_Annee_plantation_1, 
-                style: style_Annee_plantation_1,
-    title: 'Annee_plantation<br />\
-    <img src="styles/legend/Annee_plantation_1_0.png" />  1947 - 1964 <br />\
-    <img src="styles/legend/Annee_plantation_1_1.png" />  1964 - 1982 <br />\
-    <img src="styles/legend/Annee_plantation_1_2.png" />  1982 - 1999 <br />\
-    <img src="styles/legend/Annee_plantation_1_3.png" />  1999 - 2016 <br />'
-        });var format_pourcent_plant_2 = new ol.format.GeoJSON();
-var features_pourcent_plant_2 = format_pourcent_plant_2.readFeatures(json_pourcent_plant_2, 
+                source:jsonSource_PourcentagedAcide_1, 
+                style: style_PourcentagedAcide_1,
+    title: 'Pourcentage d\'Acide<br />\
+    <img src="styles/legend/PourcentagedAcide_1_0.png" />  0 - 20 <br />\
+    <img src="styles/legend/PourcentagedAcide_1_1.png" />  20 - 39 <br />\
+    <img src="styles/legend/PourcentagedAcide_1_2.png" />  39 - 59 <br />'
+        });var format_PourcentagedePhnolique_2 = new ol.format.GeoJSON();
+var features_PourcentagedePhnolique_2 = format_PourcentagedePhnolique_2.readFeatures(json_PourcentagedePhnolique_2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_pourcent_plant_2 = new ol.source.Vector({
+var jsonSource_PourcentagedePhnolique_2 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_pourcent_plant_2.addFeatures(features_pourcent_plant_2);var lyr_pourcent_plant_2 = new ol.layer.Vector({
+jsonSource_PourcentagedePhnolique_2.addFeatures(features_PourcentagedePhnolique_2);var lyr_PourcentagedePhnolique_2 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_pourcent_plant_2, 
-                style: style_pourcent_plant_2,
-    title: 'pourcent_plant<br />\
-    <img src="styles/legend/pourcent_plant_2_0.png" />  2 - 25 <br />\
-    <img src="styles/legend/pourcent_plant_2_1.png" />  25 - 48 <br />\
-    <img src="styles/legend/pourcent_plant_2_2.png" />  48 - 71 <br />\
-    <img src="styles/legend/pourcent_plant_2_3.png" />  71 - 95 <br />'
-        });var format_densit_verger_3 = new ol.format.GeoJSON();
-var features_densit_verger_3 = format_densit_verger_3.readFeatures(json_densit_verger_3, 
+                source:jsonSource_PourcentagedePhnolique_2, 
+                style: style_PourcentagedePhnolique_2,
+    title: 'Pourcentage de Phénolique<br />\
+    <img src="styles/legend/PourcentagedePhnolique_2_0.png" />  36 - 57 <br />\
+    <img src="styles/legend/PourcentagedePhnolique_2_1.png" />  57 - 79 <br />\
+    <img src="styles/legend/PourcentagedePhnolique_2_2.png" />  79 - 100 <br />'
+        });var format_PourcentagedePoirier_3 = new ol.format.GeoJSON();
+var features_PourcentagedePoirier_3 = format_PourcentagedePoirier_3.readFeatures(json_PourcentagedePoirier_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_densit_verger_3 = new ol.source.Vector({
+var jsonSource_PourcentagedePoirier_3 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_densit_verger_3.addFeatures(features_densit_verger_3);var lyr_densit_verger_3 = new ol.layer.Vector({
+jsonSource_PourcentagedePoirier_3.addFeatures(features_PourcentagedePoirier_3);var lyr_PourcentagedePoirier_3 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_densit_verger_3, 
-                style: style_densit_verger_3,
-    title: 'densité_verger<br />\
-    <img src="styles/legend/densit_verger_3_0.png" />  83 - 312 <br />\
-    <img src="styles/legend/densit_verger_3_1.png" />  312 - 542 <br />\
-    <img src="styles/legend/densit_verger_3_2.png" />  542 - 771 <br />\
-    <img src="styles/legend/densit_verger_3_3.png" />  771 - 1000 <br />'
-        });var format_Nb_Variete_4 = new ol.format.GeoJSON();
-var features_Nb_Variete_4 = format_Nb_Variete_4.readFeatures(json_Nb_Variete_4, 
+                source:jsonSource_PourcentagedePoirier_3, 
+                style: style_PourcentagedePoirier_3,
+    title: 'Pourcentage de Poirier<br />\
+    <img src="styles/legend/PourcentagedePoirier_3_0.png" /> 0<br />\
+    <img src="styles/legend/PourcentagedePoirier_3_1.png" /> 3<br />\
+    <img src="styles/legend/PourcentagedePoirier_3_2.png" /> 26<br />'
+        });var format_PourcentagedePommier_4 = new ol.format.GeoJSON();
+var features_PourcentagedePommier_4 = format_PourcentagedePommier_4.readFeatures(json_PourcentagedePommier_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Nb_Variete_4 = new ol.source.Vector({
+var jsonSource_PourcentagedePommier_4 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_Nb_Variete_4.addFeatures(features_Nb_Variete_4);var lyr_Nb_Variete_4 = new ol.layer.Vector({
+jsonSource_PourcentagedePommier_4.addFeatures(features_PourcentagedePommier_4);var lyr_PourcentagedePommier_4 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_Nb_Variete_4, 
-                style: style_Nb_Variete_4,
-    title: 'Nb_Variete<br />\
-    <img src="styles/legend/Nb_Variete_4_0.png" />  1 - 9 <br />\
-    <img src="styles/legend/Nb_Variete_4_1.png" />  9 - 18 <br />\
-    <img src="styles/legend/Nb_Variete_4_2.png" />  18 - 26 <br />\
-    <img src="styles/legend/Nb_Variete_4_3.png" />  26 - 34 <br />'
+                source:jsonSource_PourcentagedePommier_4, 
+                style: style_PourcentagedePommier_4,
+    title: 'Pourcentage de Pommier<br />\
+    <img src="styles/legend/PourcentagedePommier_4_0.png" />  74.0 - 82.7 <br />\
+    <img src="styles/legend/PourcentagedePommier_4_1.png" />  82.7 - 91.3 <br />\
+    <img src="styles/legend/PourcentagedePommier_4_2.png" />  91.3 - 100.0 <br />'
+        });var format_NombredAOC_5 = new ol.format.GeoJSON();
+var features_NombredAOC_5 = format_NombredAOC_5.readFeatures(json_NombredAOC_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_NombredAOC_5 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_NombredAOC_5.addFeatures(features_NombredAOC_5);var lyr_NombredAOC_5 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_NombredAOC_5, 
+                style: style_NombredAOC_5,
+    title: 'Nombre d\'AOC <br />\
+    <img src="styles/legend/NombredAOC_5_0.png" /> 2<br />\
+    <img src="styles/legend/NombredAOC_5_1.png" /> 3<br />'
+        });var format_Annedeplantation_6 = new ol.format.GeoJSON();
+var features_Annedeplantation_6 = format_Annedeplantation_6.readFeatures(json_Annedeplantation_6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Annedeplantation_6 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_Annedeplantation_6.addFeatures(features_Annedeplantation_6);var lyr_Annedeplantation_6 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_Annedeplantation_6, 
+                style: style_Annedeplantation_6,
+    title: 'Année de plantation<br />\
+    <img src="styles/legend/Annedeplantation_6_0.png" />  1947 - 1964 <br />\
+    <img src="styles/legend/Annedeplantation_6_1.png" />  1964 - 1982 <br />\
+    <img src="styles/legend/Annedeplantation_6_2.png" />  1982 - 1999 <br />\
+    <img src="styles/legend/Annedeplantation_6_3.png" />  1999 - 2016 <br />'
+        });var format_Densitdeplantation_7 = new ol.format.GeoJSON();
+var features_Densitdeplantation_7 = format_Densitdeplantation_7.readFeatures(json_Densitdeplantation_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Densitdeplantation_7 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_Densitdeplantation_7.addFeatures(features_Densitdeplantation_7);var lyr_Densitdeplantation_7 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_Densitdeplantation_7, 
+                style: style_Densitdeplantation_7,
+    title: 'Densité de plantation<br />\
+    <img src="styles/legend/Densitdeplantation_7_0.png" />  0 - 333 <br />\
+    <img src="styles/legend/Densitdeplantation_7_1.png" />  333 - 667 <br />\
+    <img src="styles/legend/Densitdeplantation_7_2.png" />  667 - 1000 <br />'
+        });var format_Pourcentagedesurfaceplante_8 = new ol.format.GeoJSON();
+var features_Pourcentagedesurfaceplante_8 = format_Pourcentagedesurfaceplante_8.readFeatures(json_Pourcentagedesurfaceplante_8, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Pourcentagedesurfaceplante_8 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_Pourcentagedesurfaceplante_8.addFeatures(features_Pourcentagedesurfaceplante_8);var lyr_Pourcentagedesurfaceplante_8 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_Pourcentagedesurfaceplante_8, 
+                style: style_Pourcentagedesurfaceplante_8,
+    title: 'Pourcentage de surface plantée<br />\
+    <img src="styles/legend/Pourcentagedesurfaceplante_8_0.png" />  2 - 33 <br />\
+    <img src="styles/legend/Pourcentagedesurfaceplante_8_1.png" />  33 - 64 <br />\
+    <img src="styles/legend/Pourcentagedesurfaceplante_8_2.png" />  64 - 95 <br />'
+        });var format_Nombredevaritprsente_9 = new ol.format.GeoJSON();
+var features_Nombredevaritprsente_9 = format_Nombredevaritprsente_9.readFeatures(json_Nombredevaritprsente_9, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Nombredevaritprsente_9 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_Nombredevaritprsente_9.addFeatures(features_Nombredevaritprsente_9);var lyr_Nombredevaritprsente_9 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_Nombredevaritprsente_9, 
+                style: style_Nombredevaritprsente_9,
+    title: 'Nombre de variété présente <br />\
+    <img src="styles/legend/Nombredevaritprsente_9_0.png" />  1 - 5 <br />\
+    <img src="styles/legend/Nombredevaritprsente_9_1.png" />  5 - 15 <br />\
+    <img src="styles/legend/Nombredevaritprsente_9_2.png" />  15 - 34 <br />'
         });
 
-lyr_Parcelle50_entier_0.setVisible(true);lyr_Annee_plantation_1.setVisible(true);lyr_pourcent_plant_2.setVisible(true);lyr_densit_verger_3.setVisible(true);lyr_Nb_Variete_4.setVisible(true);
-var layersList = [baseLayer,lyr_Parcelle50_entier_0,lyr_Annee_plantation_1,lyr_pourcent_plant_2,lyr_densit_verger_3,lyr_Nb_Variete_4];
-lyr_Parcelle50_entier_0.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'ID_VERGER': 'ID_VERGER', 'MO': 'MO', 'AR': 'AR', 'AO': 'AO', 'CP': 'CP', 'INSEE': 'INSEE', 'Surafce_Ha': 'Surafce_Ha', });
-lyr_Annee_plantation_1.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', });
-lyr_pourcent_plant_2.set('fieldAliases', {'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NON_VERGER': 'NON_VERGER', 'IDVERGER': 'IDVERGER', 'TYPEAOC': 'TYPEAOC', 'MODECULTUR': 'MODECULTUR', 'ARBREISOLE': 'ARBREISOLE', 'SURFPARCEL': 'SURFPARCEL', 'SURFVERGER': 'SURFVERGER', 'P_SURFPLAN': 'P_SURFPLAN', });
-lyr_densit_verger_3.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', });
-lyr_Nb_Variete_4.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', });
-lyr_Parcelle50_entier_0.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'ID_VERGER': 'TextEdit', 'MO': 'TextEdit', 'AR': 'TextEdit', 'AO': 'TextEdit', 'CP': 'TextEdit', 'INSEE': 'TextEdit', 'Surafce_Ha': 'TextEdit', });
-lyr_Annee_plantation_1.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'CP': 'TextEdit', 'IDVERGER': 'TextEdit', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'TextEdit', 'SURFPLANT': 'TextEdit', 'P_SURFPLAN': 'TextEdit', 'TOTALARBRE': 'TextEdit', 'NB_ARBRES': 'TextEdit', 'VERGERDENS': 'TextEdit', 'ANNEE': 'TextEdit', });
-lyr_pourcent_plant_2.set('fieldImages', {'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NON_VERGER': 'TextEdit', 'IDVERGER': 'TextEdit', 'TYPEAOC': 'TextEdit', 'MODECULTUR': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFPARCEL': 'TextEdit', 'SURFVERGER': 'TextEdit', 'P_SURFPLAN': 'TextEdit', });
-lyr_densit_verger_3.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'CP': 'TextEdit', 'IDVERGER': 'TextEdit', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'TextEdit', 'SURFPLANT': 'TextEdit', 'P_SURFPLAN': 'TextEdit', 'TOTALARBRE': 'TextEdit', 'NB_ARBRES': 'TextEdit', 'VERGERDENS': 'TextEdit', 'ANNEE': 'TextEdit', });
-lyr_Nb_Variete_4.set('fieldImages', {'IDU': 'TextEdit', 'NOM_COM': 'TextEdit', 'INAO': 'TextEdit', 'NOM_VERGER': 'TextEdit', 'CP': 'TextEdit', 'IDVERGER': 'TextEdit', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'TextEdit', 'SURFPLANT': 'TextEdit', 'P_SURFPLAN': 'TextEdit', 'TOTALARBRE': 'TextEdit', 'NB_ARBRES': 'TextEdit', 'VERGERDENS': 'TextEdit', 'ANNEE': 'TextEdit', });
-lyr_Parcelle50_entier_0.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'NOM_VERGER': 'header label', 'ID_VERGER': 'header label', 'MO': 'header label', 'AR': 'header label', 'AO': 'header label', 'CP': 'header label', 'INSEE': 'header label', 'Surafce_Ha': 'header label', });
-lyr_Annee_plantation_1.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'NOM_VERGER': 'header label', 'CP': 'header label', 'IDVERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'SURFVERGER': 'header label', 'SURFPLANT': 'header label', 'P_SURFPLAN': 'header label', 'TOTALARBRE': 'header label', 'NB_ARBRES': 'header label', 'VERGERDENS': 'header label', 'ANNEE': 'header label', });
-lyr_pourcent_plant_2.set('fieldLabels', {'NOM_COM': 'header label', 'INAO': 'header label', 'NON_VERGER': 'header label', 'IDVERGER': 'header label', 'TYPEAOC': 'header label', 'MODECULTUR': 'header label', 'ARBREISOLE': 'header label', 'SURFPARCEL': 'header label', 'SURFVERGER': 'header label', 'P_SURFPLAN': 'header label', });
-lyr_densit_verger_3.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'NOM_VERGER': 'header label', 'CP': 'header label', 'IDVERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'SURFVERGER': 'header label', 'SURFPLANT': 'header label', 'P_SURFPLAN': 'header label', 'TOTALARBRE': 'header label', 'NB_ARBRES': 'header label', 'VERGERDENS': 'header label', 'ANNEE': 'header label', });
-lyr_Nb_Variete_4.set('fieldLabels', {'IDU': 'header label', 'NOM_COM': 'header label', 'INAO': 'header label', 'NOM_VERGER': 'header label', 'CP': 'header label', 'IDVERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'SURFVERGER': 'header label', 'SURFPLANT': 'header label', 'P_SURFPLAN': 'header label', 'TOTALARBRE': 'header label', 'NB_ARBRES': 'header label', 'VERGERDENS': 'header label', 'ANNEE': 'header label', });
-lyr_Nb_Variete_4.on('precompose', function(evt) {
+lyr_PourcentageAutres_0.setVisible(true);lyr_PourcentagedAcide_1.setVisible(true);lyr_PourcentagedePhnolique_2.setVisible(true);lyr_PourcentagedePoirier_3.setVisible(true);lyr_PourcentagedePommier_4.setVisible(true);lyr_NombredAOC_5.setVisible(true);lyr_Annedeplantation_6.setVisible(true);lyr_Densitdeplantation_7.setVisible(true);lyr_Pourcentagedesurfaceplante_8.setVisible(true);lyr_Nombredevaritprsente_9.setVisible(true);
+var layersList = [baseLayer,lyr_PourcentageAutres_0,lyr_PourcentagedAcide_1,lyr_PourcentagedePhnolique_2,lyr_PourcentagedePoirier_3,lyr_PourcentagedePommier_4,lyr_NombredAOC_5,lyr_Annedeplantation_6,lyr_Densitdeplantation_7,lyr_Pourcentagedesurfaceplante_8,lyr_Nombredevaritprsente_9];
+lyr_PourcentageAutres_0.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_PourcentagedAcide_1.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_PourcentagedePhnolique_2.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_PourcentagedePoirier_3.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_PourcentagedePommier_4.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_NombredAOC_5.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_Annedeplantation_6.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_Densitdeplantation_7.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_Pourcentagedesurfaceplante_8.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_Nombredevaritprsente_9.set('fieldAliases', {'IDU': 'IDU', 'NOM_COM': 'NOM_COM', 'INAO': 'INAO', 'NOM_VERGER': 'NOM_VERGER', 'CP': 'CP', 'IDVERGER': 'IDVERGER', 'TYPE_AOC': 'TYPE_AOC', 'MODCULTURE': 'MODCULTURE', 'ARBREISOLE': 'ARBREISOLE', 'SURFVERGER': 'SURFVERGER', 'SURFPLANT': 'SURFPLANT', 'P_SURFPLAN': 'P_SURFPLAN', 'TOTALARBRE': 'TOTALARBRE', 'NB_ARBRES': 'NB_ARBRES', 'VERGERDENS': 'VERGERDENS', 'ANNEE': 'ANNEE', 'VERGERRAIS': 'VERGERRAIS', 'VERGERRESP': 'VERGERRESP', 'NBR_AOC': 'NBR_AOC', 'P_POMMES': 'P_POMMES', 'P_POIRES': 'P_POIRES', 'P_PHENOL': 'P_PHENOL', 'P_ACIDE': 'P_ACIDE', 'P_AUTRE': 'P_AUTRE', });
+lyr_PourcentageAutres_0.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'TextEdit', });
+lyr_PourcentagedAcide_1.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'TextEdit', 'P_AUTRE': 'Hidden', });
+lyr_PourcentagedePhnolique_2.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'TextEdit', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_PourcentagedePoirier_3.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'TextEdit', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_PourcentagedePommier_4.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'TextEdit', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_NombredAOC_5.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'TextEdit', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_Annedeplantation_6.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'Hidden', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'TextEdit', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_Densitdeplantation_7.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'TextEdit', 'NB_ARBRES': 'TextEdit', 'VERGERDENS': 'TextEdit', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_Pourcentagedesurfaceplante_8.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'TextEdit', 'SURFPLANT': 'TextEdit', 'P_SURFPLAN': 'TextEdit', 'TOTALARBRE': 'Hidden', 'NB_ARBRES': 'Hidden', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_Nombredevaritprsente_9.set('fieldImages', {'IDU': 'Hidden', 'NOM_COM': 'TextEdit', 'INAO': 'Hidden', 'NOM_VERGER': 'TextEdit', 'CP': 'Hidden', 'IDVERGER': 'Hidden', 'TYPE_AOC': 'TextEdit', 'MODCULTURE': 'TextEdit', 'ARBREISOLE': 'TextEdit', 'SURFVERGER': 'Hidden', 'SURFPLANT': 'Hidden', 'P_SURFPLAN': 'Hidden', 'TOTALARBRE': 'TextEdit', 'NB_ARBRES': 'TextEdit', 'VERGERDENS': 'Hidden', 'ANNEE': 'Hidden', 'VERGERRAIS': 'Hidden', 'VERGERRESP': 'Hidden', 'NBR_AOC': 'Hidden', 'P_POMMES': 'Hidden', 'P_POIRES': 'Hidden', 'P_PHENOL': 'Hidden', 'P_ACIDE': 'Hidden', 'P_AUTRE': 'Hidden', });
+lyr_PourcentageAutres_0.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'P_AUTRE': 'header label', });
+lyr_PourcentagedAcide_1.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'P_ACIDE': 'header label', });
+lyr_PourcentagedePhnolique_2.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'P_PHENOL': 'header label', });
+lyr_PourcentagedePoirier_3.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'P_POIRES': 'header label', });
+lyr_PourcentagedePommier_4.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'P_POMMES': 'header label', });
+lyr_NombredAOC_5.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'NBR_AOC': 'header label', });
+lyr_Annedeplantation_6.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ANNEE': 'header label', });
+lyr_Densitdeplantation_7.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'inline label', 'TOTALARBRE': 'header label', 'NB_ARBRES': 'header label', 'VERGERDENS': 'header label', });
+lyr_Pourcentagedesurfaceplante_8.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'SURFVERGER': 'header label', 'SURFPLANT': 'header label', 'P_SURFPLAN': 'header label', });
+lyr_Nombredevaritprsente_9.set('fieldLabels', {'NOM_COM': 'header label', 'NOM_VERGER': 'header label', 'TYPE_AOC': 'header label', 'MODCULTURE': 'header label', 'ARBREISOLE': 'header label', 'TOTALARBRE': 'header label', 'NB_ARBRES': 'header label', });
+lyr_Nombredevaritprsente_9.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

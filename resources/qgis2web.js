@@ -96,15 +96,15 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_Annee_plantation_1,
-      colName: 'NOM_VERGER',
+      layer: lyr_Nombredevaritprsente_9,
+      colName: 'NOM_COM',
       zoom: 10,
       collapsed: true,
       map: map
     });
 
     map.addControl(searchLayer);
-map.getView().fit([-196902.453225, 6361119.213838, -188096.220138, 6367339.863260], map.getSize());
+map.getView().fit([-197747.408987, 6283722.103945, -123654.535448, 6374267.833993], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
